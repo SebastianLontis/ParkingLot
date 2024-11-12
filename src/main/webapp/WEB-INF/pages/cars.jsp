@@ -10,13 +10,21 @@
         </div>
         <div class="col">
             User 1
-        </div>>
+        </div>
         <div class="col">
             Spot 1
         </div>
-
-
     </div>
+    <div class="row">
+        <div class="col">
+            Car 2
+        </div>
+        <div class="col">
+            User 2
+        </div>
+        <div class="col">
+            Spot 2
+        </div>
   </div>
     <h5>Free parking sports: ${numberOfFreeParkingSpots}</h5>
 </t:pageTemplate>
