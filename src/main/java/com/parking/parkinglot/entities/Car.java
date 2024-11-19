@@ -49,4 +49,8 @@ public class Car {
     public void setOwner(User owner) {
         this.owner = owner;
     }
+
+    public Object getOwnerName() {
+        return owner.getName();
+    }
 }
