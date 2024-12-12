@@ -4,6 +4,7 @@
 
 <t:pageTemplate pageTitle="Cars">
     <h1>Cars</h1>
+    <c:if test="${pageContext.request.isUserInRole('READ_USERS')}">
     <form method="POST" action="${pageContext.request.contextPath}/Cars">
         <a class="btn btn-primary btn-lg" href="${pageContext.request.contextPath}/AddCar">Add Car</a>
         <button class="btn btn-danger" type="submit">Delete Cars</button>
@@ -29,5 +30,6 @@
             </c:forEach>
         </div>
     </form>
+    </c:if>
         <h5>Free parking spots: ${numberOfFreeParkingSpots}</h5>
 </t:pageTemplate>
