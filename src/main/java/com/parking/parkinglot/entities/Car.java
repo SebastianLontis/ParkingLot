@@ -53,4 +53,15 @@ public class Car {
     public Object getOwnerName() {
         return owner.getName();
     }
+
+    private CarPhoto photo;
+
+    @OneToOne(mappedBy = "car",cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    public CarPhoto getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(CarPhoto photo) {
+        this.photo = photo;
+    }
 }
